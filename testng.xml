@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VALIDATE_PACKAGES">
+
+    <test name="ValidateEgypt">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="test_cases.TC01">
+                <methods>
+                    <include name="Click_On_Country_Menu"/>
+                    <include name="Click_On_Lebanon"/>
+                    <include name="checkTitle"/>
+                    <include name="checkPrice"/>
+                    <include name="checkCurrency"/>
+                    <include name="Click_On_Country_Menu"/>
+                    <include name="Click_On_Egypt"/>
+                    <include name="checkTitle"/>
+                    <include name="checkPrice"/>
+                    <include name="checkCurrency"/>
+                    <include name="Click_On_Country_Menu"/>
+                    <include name="Click_On_UAE"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

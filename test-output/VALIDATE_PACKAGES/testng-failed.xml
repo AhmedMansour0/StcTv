@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [VALIDATE_PACKAGES]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ValidateEgypt(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="test_cases.TC01">
+        <methods>
+          <include name="Click_On_Egypt"/>
+          <include name="setUp"/>
+          <include name="Click_On_UAE"/>
+          <include name="Click_On_Lebanon"/>
+          <include name="Tear_down"/>
+          <include name="Click_On_Country_Menu"/>
+        </methods>
+      </class> <!-- test_cases.TC01 -->
+    </classes>
+  </test> <!-- ValidateEgypt(failed) -->
+</suite> <!-- Failed suite [VALIDATE_PACKAGES] -->
