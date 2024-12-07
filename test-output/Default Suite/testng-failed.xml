@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="StcTv(failed)">
     <classes>
-      <class name="test_cases.TC01">
+      <class name="test_cases.TC01_PackagesValidation">
         <methods>
           <include name="Click_On_Egypt"/>
-          <include name="setUp"/>
           <include name="Click_On_UAE"/>
+          <include name="setUp"/>
           <include name="Click_On_Lebanon"/>
           <include name="Tear_down"/>
+          <include name="Click_On_Country_Menu"/>
         </methods>
-      </class> <!-- test_cases.TC01 -->
+      </class> <!-- test_cases.TC01_PackagesValidation -->
     </classes>
   </test> <!-- StcTv(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

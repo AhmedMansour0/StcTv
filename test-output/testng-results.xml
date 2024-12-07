@@ -2,36 +2,43 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-06T20:22:28 EET" name="Default Suite" finished-at="2024-12-06T20:22:45 EET" duration-ms="17307">
+  <suite started-at="2024-12-07T03:10:29 EET" name="VALIDATE_PACKAGES" finished-at="2024-12-07T03:10:42 EET" duration-ms="13436">
     <groups>
+      <group name="Group1">
+        <method signature="TC01_PackagesValidation.Click_On_Egypt()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" name="Click_On_Egypt" class="test_cases.TC01_PackagesValidation"/>
+      </group> <!-- Group1 -->
+      <group name="Group2">
+        <method signature="TC01_PackagesValidation.Click_On_Lebanon()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" name="Click_On_Lebanon" class="test_cases.TC01_PackagesValidation"/>
+        <method signature="TC01_PackagesValidation.Click_On_UAE()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" name="Click_On_UAE" class="test_cases.TC01_PackagesValidation"/>
+      </group> <!-- Group2 -->
     </groups>
-    <test started-at="2024-12-06T20:22:28 EET" name="StcTv" finished-at="2024-12-06T20:22:45 EET" duration-ms="17307">
-      <class name="test_cases.TC01">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_cases.TC01@5dd6264]" started-at="2024-12-06T20:22:28 EET" name="setUp" finished-at="2024-12-06T20:22:39 EET" duration-ms="11483" status="PASS">
+    <test started-at="2024-12-07T03:10:29 EET" name="CountryValidationTests" finished-at="2024-12-07T03:10:42 EET" duration-ms="13436">
+      <class name="test_cases.TC01_PackagesValidation">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" started-at="2024-12-07T03:10:29 EET" name="setUp" finished-at="2024-12-07T03:10:37 EET" duration-ms="7962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Click_On_Country_Menu()[pri:0, instance:test_cases.TC01@5dd6264]" started-at="2024-12-06T20:22:39 EET" name="Click_On_Country_Menu" finished-at="2024-12-06T20:22:39 EET" duration-ms="109" status="PASS">
+        <test-method signature="Click_On_Country_Menu()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" started-at="2024-12-07T03:10:37 EET" name="Click_On_Country_Menu" finished-at="2024-12-07T03:10:37 EET" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Country_Menu -->
-        <test-method signature="Click_On_Egypt()[pri:0, instance:test_cases.TC01@5dd6264]" started-at="2024-12-06T20:22:39 EET" name="Click_On_Egypt" finished-at="2024-12-06T20:22:41 EET" duration-ms="2236" status="PASS">
+        <test-method signature="Click_On_Egypt()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" started-at="2024-12-07T03:10:37 EET" name="Click_On_Egypt" finished-at="2024-12-07T03:10:38 EET" depends-on-methods="test_cases.TC01_PackagesValidation.Click_On_Country_Menu" duration-ms="1588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Egypt -->
-        <test-method signature="Click_On_Lebanon()[pri:0, instance:test_cases.TC01@5dd6264]" started-at="2024-12-06T20:22:41 EET" name="Click_On_Lebanon" finished-at="2024-12-06T20:22:43 EET" duration-ms="1641" status="PASS">
+        <test-method signature="Click_On_Lebanon()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" started-at="2024-12-07T03:10:38 EET" name="Click_On_Lebanon" finished-at="2024-12-07T03:10:40 EET" depends-on-methods="test_cases.TC01_PackagesValidation.Click_On_Country_Menu" duration-ms="1289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Lebanon -->
-        <test-method signature="Click_On_UAE()[pri:0, instance:test_cases.TC01@5dd6264]" started-at="2024-12-06T20:22:43 EET" name="Click_On_UAE" finished-at="2024-12-06T20:22:45 EET" duration-ms="1687" status="PASS">
+        <test-method signature="Click_On_UAE()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" started-at="2024-12-07T03:10:40 EET" name="Click_On_UAE" finished-at="2024-12-07T03:10:42 EET" depends-on-methods="test_cases.TC01_PackagesValidation.Click_On_Country_Menu" duration-ms="2331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_UAE -->
-        <test-method is-config="true" signature="Tear_down()[pri:0, instance:test_cases.TC01@5dd6264]" started-at="2024-12-06T20:22:45 EET" name="Tear_down" finished-at="2024-12-06T20:22:45 EET" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="Tear_down()[pri:0, instance:test_cases.TC01_PackagesValidation@5276e6b0]" started-at="2024-12-07T03:10:42 EET" name="Tear_down" finished-at="2024-12-07T03:10:42 EET" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_down -->
-      </class> <!-- test_cases.TC01 -->
-    </test> <!-- StcTv -->
-  </suite> <!-- Default Suite -->
+      </class> <!-- test_cases.TC01_PackagesValidation -->
+    </test> <!-- CountryValidationTests -->
+  </suite> <!-- VALIDATE_PACKAGES -->
 </testng-results>

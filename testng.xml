@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="VALIDATE_PACKAGES">
-
-    <test name="ValidateEgypt">
+    <test name="CountryValidationTests">
         <parameter name="browser" value="Chrome"/>
+        <groups>
+            <define name="Group1">
+                <include name="Click_On_Country_Menu"/>
+                <include name="Click_On_Egypt"/>
+            </define>
+            <define name="Group2">
+                <include name="Click_On_Lebanon"/>
+                <include name="Click_On_UAE"/>
+            </define>
+
+        </groups>
         <classes>
-            <class name="test_cases.TC01">
-                <methods>
-                    <include name="Click_On_Country_Menu"/>
-                    <include name="Click_On_Lebanon"/>
-                    <include name="checkTitle"/>
-                    <include name="checkPrice"/>
-                    <include name="checkCurrency"/>
-                    <include name="Click_On_Country_Menu"/>
-                    <include name="Click_On_Egypt"/>
-                    <include name="checkTitle"/>
-                    <include name="checkPrice"/>
-                    <include name="checkCurrency"/>
-                    <include name="Click_On_Country_Menu"/>
-                    <include name="Click_On_UAE"/>
-                </methods>
-            </class>
+            <class name="test_cases.TC01_PackagesValidation"/>
         </classes>
     </test>
-
 </suite>

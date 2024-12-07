@@ -28,17 +28,15 @@ public class P01_SubscriptionPage {
 
 
 
-    public  P01_SubscriptionPage click_on_country_menu(){
+    public void click_on_country_menu(){
         driver.findElement(this.COUNTRY_ICON).click();
-        return this;
     }
     public void Select_Egypt(){
         driver.findElement(this.EGYPT).click();
     }
 
-    public  P01_SubscriptionPage Select_UAE(){
+    public void Select_UAE(){
         driver.findElement(this.UAE).click();
-        return this;
     }
     public void Select_Lebanon(){
         driver.findElement(this.LEBANON).click();
@@ -82,9 +80,5 @@ public class P01_SubscriptionPage {
 
         return driver.findElement(this.PREMIUM_CURRENCY).isDisplayed();
     }
-//    public void checkLite(){
-//
-//        System.out.println(driver.findElement(LITE_TITLE).getText());
-//        System.out.println(driver.findElement(PREMIUM_PRICE).getText());
-//    }
+
 }

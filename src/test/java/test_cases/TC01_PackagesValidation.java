@@ -7,7 +7,7 @@ import pages.P01_SubscriptionPage;
 
 import java.time.Duration;
 
-public class TC01{
+public class TC01_PackagesValidation {
     private WebDriver driver;
     public void checkTitle(){
         Assert.assertTrue(new P01_SubscriptionPage(driver).verifyLiteTitle());
@@ -43,7 +43,7 @@ public class TC01{
         new P01_SubscriptionPage(driver).click_on_country_menu();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
     }
-    @Test
+    @Test(groups = {"Group1"},dependsOnMethods = {"Click_On_Country_Menu" })
     public void Click_On_Egypt()
     {
         new P01_SubscriptionPage(driver).Select_Egypt();
@@ -52,7 +52,7 @@ public class TC01{
         checkCurrency();
     }
 
-    @Test
+    @Test(groups = {"Group2"},dependsOnMethods = { "Click_On_Country_Menu" })
     public void Click_On_Lebanon()
     {
         new P01_SubscriptionPage(driver).Select_Lebanon();
@@ -61,7 +61,7 @@ public class TC01{
         checkCurrency();
     }
 
-    @Test
+    @Test(groups = {"Group2"},dependsOnMethods = { "Click_On_Country_Menu" })
     public void Click_On_UAE()
     {
         new P01_SubscriptionPage(driver).Select_UAE();

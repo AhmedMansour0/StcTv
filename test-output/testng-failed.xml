@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="StcTv(failed)">
+<suite name="Failed suite [VALIDATE_PACKAGES]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CountryValidationTests(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Group1"/>
+      </run>
+    </groups>
     <classes>
-      <class name="test_cases.TC01">
+      <class name="test_cases.TC01_PackagesValidation">
         <methods>
           <include name="Click_On_Egypt"/>
-          <include name="setUp"/>
-          <include name="Click_On_UAE"/>
-          <include name="Click_On_Lebanon"/>
-          <include name="Tear_down"/>
         </methods>
-      </class> <!-- test_cases.TC01 -->
+      </class> <!-- test_cases.TC01_PackagesValidation -->
     </classes>
-  </test> <!-- StcTv(failed) -->
-</suite> <!-- Failed suite [Default Suite] -->
+  </test> <!-- CountryValidationTests(failed) -->
+</suite> <!-- Failed suite [VALIDATE_PACKAGES] -->
